@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #00C49A;
+
+    text-align: center;
+}
+h1{
+    color: #011627;
+    font-size: 2.5rem;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vmin;
+    width: 60vmin;
+    gap: 1.5vmin;
+}
+.box{
+    height: 19vmin;
+    width: 19vmin;
+    background-color: #EBCC70;
+    /* color: #0D2818; */
+    color: #034732 ;
+    /* color: #008148; */
+    color: #2D4739;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+}
+#reset-button{
+    background-color: #011627;
+    color: #FAE1DF;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.winner-text{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+
+#msg1{
+    color: #FAE1DF;
+    font-size: 3rem;
+    
+}
+#msg2{
+    color: #FAE1DF;
+    font-size: 3rem;
+    
+}
+#new-game{
+    background-color: #011627;
+    color: #FAE1DF;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.hide{
+    display: none;
+}
+
+/*Box fade in the beginning*/
+.boxer {
+    animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/*Box click effect*/
+.box:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 0.2rem #333 inset;
+    transition: transform 0.1s;
+}
+
+/*Highlight winning boxes*/
+.winning-box {
+    animation: flash 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes flash {
+    from {
+        background-color: #EBCC70;
+        transform: scale(1);
+    }
+    to {
+        background-color: #00cb99;
+        transform: scale(1.1);
+    }
+}
+
+/*Win message animation*/
+.winner-text {
+    animation: winnerFade 0.7s ease;
+}
+
+@keyframes winnerFade {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
