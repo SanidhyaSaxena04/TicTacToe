@@ -44,7 +44,7 @@ git clone https://github.com/your-username/tic-tac-toe.git
 Open the index.html file in any browser.
 That’s it — start playing!
 
-📸 Screenshot (Optional)
+📸 Screenshot
 
 <img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/5109c0aa-dccb-463a-a427-eef5e5b490a6" />
 <img width="1894" height="950" alt="image" src="https://github.com/user-attachments/assets/24a31b6a-e100-4c40-ab21-49157539430c" />
